@@ -1,0 +1,30 @@
+body{background-color: pink;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: 'Inter';
+
+
+
+}
+
+p{
+    color : navy;
+
+}
+
+a:link{
+    text-decoration: none;
+    color :aquamarine;
+}
+
+a:visited{
+    text-decoration: none;
+    color :rgb(180, 255, 127);
+}
+
+a:hover{
+    text-decoration: none;
+    color :aquamarine;
+    font-weight: bold;
+}
+

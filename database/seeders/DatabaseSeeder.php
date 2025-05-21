@@ -9,10 +9,15 @@ class DatabaseSeeder extends Seeder
 {
     /**
      * Seed the application's database.
+<<<<<<< HEAD
      *
      * @return void
      */
     public function run()
+=======
+     */
+    public function run(): void
+>>>>>>> 57108d3 (Pertemuan 13)
     {
         // \App\Models\User::factory(10)->create();
 

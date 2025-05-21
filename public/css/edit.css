@@ -1,0 +1,204 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: fixed;
+    transition: all 0.3s ease;
+    }
+    /* Sidebar Styles */
+    .sidebar {
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #325585;
+        color: white;
+        padding-top: 20px;
+        transition: width 0.3s;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Kasih raung ke bawah */
+    }
+
+    .sidebar .logo .profile-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-left: 1px;
+        margin-top: 25px;
+    }
+    
+    .sidebar .logo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5px; /* Kasih jarak antara logo dan tulisan*/
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px 0;
+        border-bottom: 1px solid grey;
+    }
+    
+  
+    
+    .sidebar .logo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 15px;
+    }
+
+    .sidebar .logo .profile-text {
+        color: white;
+        font-size: 16px;
+    }
+
+    .sidebar .logo .profile-email {
+        color: white;
+        font-size: 14px;
+        display: block;
+    }
+
+    .sidebar .logo .profile-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Menjadikan teks sejajar ke kiri */
+        margin-left: 10px; /* Memberi jarak antara gambar dan teks */
+        margin-top: 25px;
+    }
+
+    
+    .sidebar a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+        transition: background 0.3s;
+        margin: 5px 10px; 
+        border-radius: 12px; 
+    }
+    
+    .sidebar a:hover {
+        background: #767c82;
+    }
+    
+    .sidebar .active {
+        background: #135181;
+        color: white; 
+        border-radius: 12px; 
+        transition: background 0.3s, margin 0.3s; /* Smooth transition */
+    }
+    
+    /* Toggle Button Styles */
+    
+    
+    .toggle-btn {
+        position: absolute;
+        top: 20px;
+        font-size: 24px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: white;
+        transition: left 0.3s;
+    }
+    .toggle-checkbox {
+        display: none;
+    }
+    .content {
+        margin-left: 250px; /* Awalnya menyesuaikan sidebar */
+        padding: 20px;
+        width: calc(100% - 250px);
+        transition: all 0.3s ease;
+    }
+
+    .close-btn {
+        left: 200px;
+        top: 3px;
+    }
+    
+    .open-btn {
+        left: 4px;
+        top: 3px;
+        display: block;
+        background-color: #163f7d;
+        color: white;
+        border: none;
+        padding: 5px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+  
+    .content {
+        margin-left: 270px;
+        margin-top: 30px;
+        padding: 20px;
+        transition: margin-left 0.3s;
+    }
+    
+    
+    .toggle-checkbox:checked ~ .sidebar {
+        width: 0;
+    }
+    
+ 
+    
+    .toggle-checkbox:not(:checked) ~ .open-btn {
+        display: none;
+    }
+    
+    .toggle-checkbox:checked ~ .content {
+        margin-left: 20px;
+    }
+    .toggle-checkbox:checked ~ .sidebar .close-btn {
+        display: none;
+    }
+    
+    .toggle-checkbox:checked ~ .open-btn {
+        display: block;
+    }
+   
+    .toggle-checkbox:checked ~ .sidebar .text-danger {
+    display: none;
+    }
+
+
+    @media (max-width: 768px) {
+        .sidebar {
+            width: 0;
+        }
+        .close-btn {
+            left: 0;
+        }
+        .content {
+            margin-left: 0;
+        }
+    }
+
+    .toggle-checkbox:checked ~ .sidebar .close-btn {
+        display: none;
+    }
+    
+    .toggle-checkbox:checked ~ .open-btn {
+        display: block;
+    }
+
+    .toggle-checkbox:checked ~ .sidebar .close-btn {
+        display: none;
+    }
+    
+    .toggle-checkbox:checked ~ .open-btn {
+        display: block;
+    }
+    .toggle-checkbox:checked ~ .sidebar .close-btn {
+        display: none;
+    }
+    
+    .toggle-checkbox:checked ~ .open-btn {
+        display: block;
+    }
+    
