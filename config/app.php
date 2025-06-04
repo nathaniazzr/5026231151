@@ -1,10 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Facade;
-<<<<<<< HEAD
-=======
-use Illuminate\Support\ServiceProvider;
->>>>>>> 57108d3 (Pertemuan 13)
 
 return [
 
@@ -144,11 +140,7 @@ return [
 
     'maintenance' => [
         'driver' => 'file',
-<<<<<<< HEAD
-        // 'store'  => 'redis',
-=======
         // 'store' => 'redis',
->>>>>>> 57108d3 (Pertemuan 13)
     ],
 
     /*
@@ -162,7 +154,6 @@ return [
     |
     */
 
-<<<<<<< HEAD
     'providers' => [
 
         /*
@@ -191,13 +182,6 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
-=======
-    'providers' => ServiceProvider::defaultProviders()->merge([
->>>>>>> 57108d3 (Pertemuan 13)
-        /*
-         * Package Service Providers...
-         */
-
         /*
          * Application Service Providers...
          */
@@ -206,12 +190,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-<<<<<<< HEAD
 
     ],
-=======
-    ])->toArray(),
->>>>>>> 57108d3 (Pertemuan 13)
 
     /*
     |--------------------------------------------------------------------------
@@ -225,11 +205,7 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
-<<<<<<< HEAD
-        // 'ExampleClass' => App\Example\ExampleClass::class,
-=======
         // 'Example' => App\Facades\Example::class,
->>>>>>> 57108d3 (Pertemuan 13)
     ])->toArray(),
 
 ];

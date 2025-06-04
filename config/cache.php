@@ -52,10 +52,7 @@ return [
         'file' => [
             'driver' => 'file',
             'path' => storage_path('framework/cache/data'),
-<<<<<<< HEAD
-=======
             'lock_path' => storage_path('framework/cache/data'),
->>>>>>> 57108d3 (Pertemuan 13)
         ],
 
         'memcached' => [
