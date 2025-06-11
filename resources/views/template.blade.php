@@ -85,7 +85,7 @@
                 <a class="nav-link" href="/eas">EAS</a> <!-- Link EAS -->
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/latihan1">Latihan 1</a> <!-- Link Latihan 1 -->
+                <a class="nav-link" href="http://127.0.0.1:8000/keranjang"">Latihan 1</a> <!-- Link Latihan 1 -->
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/latihan2">Latihan 2</a> <!-- Link Latihan 2 -->

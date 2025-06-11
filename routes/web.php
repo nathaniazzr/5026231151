@@ -6,7 +6,9 @@ use App\Http\Controllers\Pegawai2Controller ;
 use App\Http\Controllers\BlogController ;
 use App\Http\Controllers\PegawaiController ;
 use App\Http\Controllers\MouseController;
+use App\Http\Controllers\KeranjangBelanjaController;
 //import java.io;
+
 
 //
 Route::get('/', function () {
@@ -104,4 +106,26 @@ Route::put('/mouse/update', [MouseController::class, 'update']);
 
 
 Route::get('/mouse/hapus/{id}', [MouseController::class, 'hapus2']);
+
+
+
+
+
+// Menampilkan data keranjang
+Route::get('/keranjang', [KeranjangBelanjaController::class, 'index4']);
+
+// Menampilkan form tambah barang ke keranjang
+Route::get('/keranjang/tambah', [KeranjangBelanjaController::class, 'tambah3']);
+
+// Menyimpan data keranjang
+Route::post('/keranjang/store', [KeranjangBelanjaController::class, 'store']);
+
+// Menampilkan form edit barang ke keranjang
+Route::get('/keranjang/edit/{id}', [KeranjangBelanjaController::class, 'edit']);
+
+// Update data keranjang
+Route::post('/keranjang/update', [KeranjangBelanjaController::class, 'update']);
+
+// Menghapus data keranjang
+Route::get('/keranjang/hapus/{id}', [KeranjangBelanjaController::class, 'hapus3']);
 
