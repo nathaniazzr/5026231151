@@ -5,6 +5,7 @@ use App\Http\Controllers\Link ;
 use App\Http\Controllers\Pegawai2Controller ;
 use App\Http\Controllers\BlogController ;
 use App\Http\Controllers\PegawaiController ;
+use App\Http\Controllers\MouseController;
 //import java.io;
 
 //
@@ -91,4 +92,16 @@ Route::get('/pegawai/edit/{id}', [PegawaiController::class, 'edit']);
 Route::post('/pegawai/update', [PegawaiController::class, 'update']);
 Route::get('/pegawai/hapus/{id}', [PegawaiController::class, 'hapus']);
 Route::get('/pegawai/cari', [PegawaiController::class, 'cari']);
+
+
+
+//route MOUSE CRUD
+Route::get('/mouse', [MouseController::class, 'index3']);
+Route::get('/mouse/tambah', [MouseController::class, 'tambah2']);
+Route::post('/mouse/store', [MouseController::class, 'store']);
+Route::get('/mouse/edit/{id}', [MouseController::class, 'edit2']);
+Route::put('/mouse/update', [MouseController::class, 'update']);
+
+
+Route::get('/mouse/hapus/{id}', [MouseController::class, 'hapus2']);
 
