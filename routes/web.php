@@ -7,6 +7,7 @@ use App\Http\Controllers\BlogController ;
 use App\Http\Controllers\PegawaiController ;
 use App\Http\Controllers\MouseController;
 use App\Http\Controllers\KeranjangBelanjaController;
+use App\Http\Controllers\KaryawanController;
 //import java.io;
 
 
@@ -129,3 +130,11 @@ Route::post('/keranjang/update', [KeranjangBelanjaController::class, 'update']);
 // Menghapus data keranjang
 Route::get('/keranjang/hapus/{id}', [KeranjangBelanjaController::class, 'hapus3']);
 
+// crud karyawanAdd commentMore actions
+Route::get('/karyawan', [KaryawanController::class,'index5']);
+Route::get('/karyawan/tambah', [KaryawanController::class,'tambah4']);
+Route::post('/karyawan/store', [KaryawanController::class,'store']);
+Route::get('/karyawan/edit/{id}', [KaryawanController::class,'edit4']);
+Route::post('/karyawan/update', [KaryawanController::class,'update']);
+Route::get('/karyawan/hapus/{id}',[KaryawanController::class,'hapus4']);
+Route::get('/karyawan/cari',[KaryawanController::class,'cari']);

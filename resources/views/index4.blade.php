@@ -70,7 +70,7 @@
             <td>{{ number_format($k->Jumlah * $k->Harga, 2, ',', '.') }}</td>
             <td>
                 <!-- Tombol Beli yang akan memunculkan form untuk tambah barang -->
-                <button class="btn btn-primary btn-sm beli" data-id="{{ $k->ID }}" style="padding: 8px 15px; border-radius: 25px; background-color: #ccafee; color: white; border: none;">Beli</button>
+                <a href="/keranjang/tambah"<button class="btn btn-primary btn-sm beli" data-id="{{ $k->ID }}" style="padding: 8px 15px; border-radius: 25px; background-color: #ccafee; color: white; border: none;">Beli</button>
                 <a href="/keranjang/hapus/{{ $k->ID }}" class="btn btn-danger btn-sm" style="padding: 8px 15px; border-radius: 25px; background-color: #aa74c5; color: white; border: none;">Batal</a>
             </td>
         </tr>
@@ -78,7 +78,7 @@
     </tbody>
 </table>
 
-<!-- Form untuk menambah barang, yang akan muncul ketika tombol beli diklik -->
+{{-- <!-- Form untuk menambah barang, yang akan muncul ketika tombol beli diklik -->
 <div id="formTambahBarang">
     <h4>Tambah Barang ke Keranjang</h4>
     <form action="/keranjang/store" method="post">
@@ -125,7 +125,7 @@
             document.getElementById('formTambahBarang').style.display = 'block';
         });
     });
-</script>
+</script> --}}
 
 <!-- Pagination untuk keranjang belanja -->
 <div class="pagination justify-content-center" style="margin-top: 20px;">

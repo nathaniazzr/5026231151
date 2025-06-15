@@ -1,15 +1,18 @@
+
+
 @extends('template')
 
 @section('content')
 
 <h3 style="color: #333;">Tambah Barang ke Keranjang</h3> <!-- Warna font untuk judul -->
+<a href="/keranjang" class="btn" style="background-color: #efb7c0; color:white; border-radius: 10px"> Kembali</a>
 
-<!-- Form untuk menambah barang ke keranjang belanja -->
+<br />
+<br />
+<!-- Form untuk menambah karyawan -->
 <form action="/keranjang/store" method="post">
     {{ csrf_field() }}
 
-    <!-- Menyimpan ID untuk Kode Pembelian -->
-    <input type="hidden" name="KodePembelian" value="{{ $keranjang->ID }}">
 
     <!-- Kolom Kode Barang -->
     <div class="row">
