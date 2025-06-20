@@ -10,7 +10,7 @@ class KeranjangBelanjaController extends Controller
     public function index4()
     {
         // Mengambil data keranjang dengan paginasi
-        $keranjang = DB::table('keranjangbelanja')->paginate(10);  // Menampilkan 10 data per halaman
+        $keranjang = DB::table('keranjangbelanja')->get();  // Menampilkan 10 data per halaman
 
         // Mengirim data ke view
         return view('index4', ['keranjang' => $keranjang]);

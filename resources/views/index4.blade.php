@@ -48,6 +48,11 @@
 
 <h3>Data Keranjang Belanja</h3>
 
+<a href="/keranjang/tambah"class="btn btn-primary"> + Beli Barang Baru</a>
+
+<br>
+<br>
+
 <!-- Tabel untuk menampilkan data keranjang belanja -->
 <table class="custom-table">
     <thead>
@@ -70,7 +75,7 @@
             <td>{{ number_format($k->Jumlah * $k->Harga, 2, ',', '.') }}</td>
             <td>
                 <!-- Tombol Beli yang akan memunculkan form untuk tambah barang -->
-                <a href="/keranjang/tambah"<button class="btn btn-primary btn-sm beli" data-id="{{ $k->ID }}" style="padding: 8px 15px; border-radius: 25px; background-color: #ccafee; color: white; border: none;">Beli</button>
+
                 <a href="/keranjang/hapus/{{ $k->ID }}" class="btn btn-danger btn-sm" style="padding: 8px 15px; border-radius: 25px; background-color: #aa74c5; color: white; border: none;">Batal</a>
             </td>
         </tr>
@@ -128,8 +133,9 @@
 </script> --}}
 
 <!-- Pagination untuk keranjang belanja -->
-<div class="pagination justify-content-center" style="margin-top: 20px;">
+{{-- <div class="pagination justify-content-center" style="margin-top: 20px;">
     {{ $keranjang->links('pagination::bootstrap-4') }}
-</div>
+</div> --}}
 
 @endsection
+

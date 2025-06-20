@@ -8,6 +8,8 @@ use App\Http\Controllers\PegawaiController ;
 use App\Http\Controllers\MouseController;
 use App\Http\Controllers\KeranjangBelanjaController;
 use App\Http\Controllers\KaryawanController;
+use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\MykaryawanController;
 //import java.io;
 
 
@@ -138,3 +140,29 @@ Route::get('/karyawan/edit/{id}', [KaryawanController::class,'edit4']);
 Route::post('/karyawan/update', [KaryawanController::class,'update']);
 Route::get('/karyawan/hapus/{id}',[KaryawanController::class,'hapus4']);
 Route::get('/karyawan/cari',[KaryawanController::class,'cari']);
+
+// crud mahasiswa
+Route::get('/mahasiswa', [MahasiswaController::class,'index6']);
+Route::get('/mahasiswa/tambah', [MahasiswaController::class,'tambah5']);
+Route::post('/mahasiswa/store', [MahasiswaController::class,'store']);
+Route::get('/mahasiswa/edit/{id}', [MahasiswaController::class,'edit3']);
+Route::put('/mahasiswa/update', [MahasiswaController::class,'update']);
+Route::get('/mahasiswa/hapus/{id}',[Controller::class,'hapus4']);
+
+
+
+Route::get('/karyawan/tambah', [KaryawanController::class,'tambah4']);
+
+
+
+// Routes untuk MykaryawanController
+Route::get('/eas', [MykaryawanController::class, 'indexmykaryawan']);
+Route::get('/mykaryawan/edit/{id}', [MykaryawanController::class, 'editmykaryawan']);
+Route::put('/mykaryawan/update', [MykaryawanController::class, 'update']);
+Route::post('/mykaryawan/store', [MykaryawanController::class, 'store']);
+Route::get('/mykaryawan/view/{id}', [MykaryawanController::class, 'viewmykaryawan']);
+
+
+
+
+

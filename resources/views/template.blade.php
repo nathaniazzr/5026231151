@@ -91,7 +91,7 @@
                 <a class="nav-link" href="http://127.0.0.1:8000/karyawan">Latihan 2</a> <!-- Link Latihan 2 -->
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/latihan3">Latihan 3</a> <!-- Link Latihan 3 -->
+                <a class="nav-link" href="http://127.0.0.1:8000/mahasiswa">Latihan 3</a> <!-- Link Latihan 3 -->
             </li>
         </ul>
     </nav>
